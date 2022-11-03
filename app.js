@@ -63,7 +63,7 @@ app.get('/getdata/:autor/:nome', async (req, res) => {
   }
 });
 
-server.listen(port, () => {
+server.listen(process.env.PORT || port, () => {
   console.log('listening on: ' + port);
 });
 
